@@ -1,0 +1,170 @@
+/* ------------------ Profile Card ------------------ */
+
+.profileCard {
+    background-color: var(--Navy-900);
+    width: 100%;
+
+    /* height: 150px; */
+    /* margin: 40px auto; */
+    border-radius: 20px;
+    overflow: hidden;
+    /* keeps inner radius consistent */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.profileInfo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 25px 0;
+
+    justify-content: center;
+    /* height: 100px; */
+    background-color: var(--Purple-600);
+    border-radius: 20px;
+    /* top corners rounded */
+}
+
+.profileImg {
+    width: 60px;
+    height: 60px;
+    background-color: var(--Navy-200);
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.profileText {
+    color: var(--Navy-200);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+}
+
+.smallText {
+    font-size: 0.8rem;
+    /* opacity: 0.85; */
+}
+
+.split-name {
+    font-size: 1.2rem;
+    font-weight: 200;
+    display: flex;
+}
+
+/* ------------------ Tabs Section ------------------ */
+
+.tabs-container {
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 6px;
+}
+
+.tab-button {
+    /* flex: 1; */
+    display: flex;
+
+
+    margin: 10px;
+    border: none;
+    background: none;
+    color: var(--Navy-200);
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    color: var(--Purple-200);
+}
+
+.tab-button.active {
+    color: white;
+    /* font-weight: 600; */
+}
+
+@media (min-width: 1000px) {
+    .profileCard {
+        /* min-height: 75vh; */
+        height: 500px;
+        width: 300px;
+    }
+
+    .profileInfo {
+        flex-direction: column;
+        height: 70%;
+        padding: 25px;
+        align-items: start;
+        justify-content: start;
+        /* justify-items: start; */
+    }
+
+    .profileImg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .split-name {
+        display: unset;
+        font-size: 2.4rem;
+        font-weight: 00;
+        color: white;
+        text-align: center;
+    }
+
+    .first-name,
+    .last-name {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.8s forwards;
+    }
+
+    .last-name {
+        animation-delay: 1s;
+    }
+
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .smallText {
+        font-size: 1rem;
+    }
+
+    .tabs {
+        flex-direction: column;
+        justify-content: start;
+        text-align: start;
+        /* : start; */
+    }
+
+    .tabs-container {
+        width: 95%;
+    }
+}
