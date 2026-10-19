@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Summary Component</title>
+    <link rel="icon" type="image/png" href="public/favicon-32x32.png" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="order-summary">
+        <img src="assets/illustration-hero.svg" alt="Hero" class="hero" />
+
+        <h1>Order Summary</h1>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="plan">
+          <div class="plan-details">
+            <img src="/assets/icon-music.svg" alt="ksMusic Icon" />
+            <div class="plan-info">
+              <div class="type">Annual Plan</div>
+              <div class="price">$59.99/year</div>
+            </div>
+          </div>
+          <button class="change-btn" onclick="changePlan()">Change</button>
+        </div>
+        <button class="order-btn" onclick="proceedOrder()">
+          Proceed to Payment
+        </button>
+        <button class="cancel-btn" onclick="cancelOrder()">Cancel Order</button>
+      </div>
+
+      <script src="/app.js"></script>
+    </div>
+  </body>
+</html>
