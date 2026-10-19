@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: hsl(0, 0%, 80%);
+}
+
+.container {
+    /* margin: auto; */
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    border-radius: 1rem 1rem 6rem 1rem;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* dateform */
+/* .dateForm {
+  
+
+} */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 1rem; */
+    gap: 0.6em;
+    padding-bottom: 2.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    /* padding-left: 1rem; */
+    /* margin: 0.5rem; */
+    border-radius: 0.5rem;
+    border: 1px solid hsl(0, 0%, 80%);
+    font-size: large;
+    font-weight: 600;
+}
+
+
+.buttonContainer {
+    /* position: relative; */
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+
+    width: 100%;
+    height: 0.1rem;
+    background-color: hsl(0, 0%, 80%);
+    left: 50%;
+}
+
+
+img {
+    position: absolute;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+}
